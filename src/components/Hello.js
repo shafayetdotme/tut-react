@@ -1,9 +1,13 @@
 import React from 'react';
 
 const Hello = () => {
-    // Simpler way With JSX
-    return (
-        <h1>Hello Shafayet From JSX</h1>
+    // React Component Without JSX
+    return React.createElement("div",
+        {
+            id : "demoId",
+            className : "demoClass"
+        }, 
+        React.createElement("h1", null, "Hello Shafayet")
     );
 }
 
