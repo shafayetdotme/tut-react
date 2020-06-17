@@ -1,3 +1,5 @@
 import React from 'react';
 
-export const Greet = () => <h1>Hello Shafayet</h1>;
+const Greet = () => <h1>Hello Shafayet From Functional Component</h1>;
+
+export default Greet;
