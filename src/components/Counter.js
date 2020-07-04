@@ -8,14 +8,14 @@ export class Counter extends Component {
 
   increment() {
     this.setState(
-      {
-        count: this.state.count + 1,
+      (prevState) => {
+        return { count: prevState.count + 1 };
       },
       () => {
         console.log("Callback function: " + this.state.count);
       }
     );
-    console.log("After the Function: " + this.state.count);
+    console.log("After the setState Function: " + this.state.count);
   }
 
   render() {
